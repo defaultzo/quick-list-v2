@@ -62,6 +62,7 @@ form.addEventListener('submit', event =>{
         const checkIcon = newItemLi.querySelector('.custom-checkbox')//Imagem do checkbox
         const trashIcon = newItemLi.querySelector('.icon2')//Imagem da lixeira
 
+
         /*
         Outro jeito que eu pensei de fazer o check do checkbox, mas acabei fazendo de outra maneira
         checkIcon.addEventListener('click', () =>{
@@ -69,6 +70,8 @@ form.addEventListener('submit', event =>{
         })
         console.log(checkIcon)
         */
+
+
         //Evento de excluir o item da lista
         trashIcon.addEventListener('click', () =>{
         // O comando .remove() exclui o elemento inteiro (o <li> que eu criei) do site
@@ -92,7 +95,27 @@ form.addEventListener('submit', event =>{
         removeAlert.style.display = 'none';
         })
     }
-
-    const btnClear = document.getElementById('btn-limpar')
 })
+
+
+    //Pegando o botão de limpar lista pelo id q eu criei lá no HTML
+    const btnClear = document.getElementById('btnClear')
+
+    //Evento de click do botão de limpar lista
+    btnClear.addEventListener('click', () => {
+
+        //Busco no elemto da lista todos os checkbox que estao marcados
+        const checkedItems = list.querySelectorAll('.checkbox-input:checked')
+
+        //Pra cada checkbox marcado, eu pego
+        checkedItems.forEach(item => {
+
+        //Encontra o elemento <li> mais próximo do checkbox marcado
+        const itemToRemove = item.closest('.itens') 
+
+        //Remove o item da lista
+        itemToRemove.remove()
+    })
+})
+
 
