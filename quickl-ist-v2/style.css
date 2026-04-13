@@ -53,8 +53,6 @@ header{
   outline: inherit; 
   font-weight: 600;
 }
-
-
 }
 
 
@@ -162,9 +160,47 @@ button:hover {
      }
 }
 
+#check11{
+    display: none;
+}
+
+/*Esconde o checkbox padrão*/
+.checkbox-input {
+    appearance: none;
+    -webkit-appearance: none;
+    position: absolute; /* Remove do fluxo para não ocupar espaço */
+}
+
+/*Estilo para o container da label*/
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+/*Cria o "ícone" customizado*/
+.custom-checkbox {
+    width: 1.3rem;
+    height: 1.3rem;
+    background-image: url('assets/iconCheckBoxDefault.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*Muda o ícone quando o input estiver MARCADO*/
+.checkbox-input:checked + .checkbox-label .custom-checkbox {
+    background-image: url('assets/iconCheckBoxSelected.svg');
+}
+
+/*(Opcional) Efeito de hover no ícone*/
+.checkbox-label:hover .custom-checkbox {
+    background-image: url('assets/iconCheckBoxHover.svg');
+}
+
 
 .removeItem {
-    display: flex;
     display: none;
     align-items: center;
     justify-content: center;
