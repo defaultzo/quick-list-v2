@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Quick-List</title>
+</head>
+<body>
+    <header>
+            <img src="assets/vector.svg" alt="">
+            <h1>quick list</h1>
+    </header>
+
+        <section class="content1">
+            <main>
+        <button class="btn"><-Voltar</button>
+            </main>
+        </section>
+
+         <section class="content2">
+        <h1>Compras da semana</h1>
+        </section>
+
+        <section class="form">
+            <form>
+            <input type="text" placeholder="Adicionar um novo item">
+            <button type="submit">Adicionar item</button>
+            </form>
+            <form>
+        </section>
+
+        <section class="list">
+            <ul>
+                <li class="itens" >
+                    <img src="assets/iconCheckBoxDefault.svg" class="icon1">
+                    <p>Pão de Forma</p>
+                    <img src="assets/iconTrash.svg" class="icon2">
+                </li>
+
+                 <li class="itens" >
+                    <img src="assets/iconCheckBoxDefault.svg" class="icon1">
+                    <p>Café preto</p>
+                    <img src="assets/iconTrash.svg" class="icon2">
+                </li>
+
+                 <li class="itens" >
+                    <img src="assets/iconCheckBoxDefault.svg" class="icon1">
+                    <p>Suco de Laranja</p>
+                    <img src="assets/iconTrash.svg" class="icon2">
+                </li>
+
+                <li class="itens" >
+                    <img src="assets/iconCheckBoxDefault.svg" class="icon1">
+                    <p>Bolacha</p>
+                    <img src="assets/iconTrash.svg" class="icon2">
+                </li>
+
+
+                <li class="itens">
+                    <input type ="checkbox" id="exemplo">
+                    <label for="exemplo">
+                        <p>Exemplo</p>
+                    </label>
+                    <img src="assets/iconTrash.svg" class="icon2">
+                </li>
+            </ul>
+        </section>
+
+        
+        <section class="removeItem">
+            <ul>
+                <li class="removeAlert">
+                    <img src="assets/iconAlert.svg" alt="">
+                    <p>O item selecionado foi removido</p>
+                    <img src="assets/iconDelete.svg" alt="" class="icon3">
+                </li>
+            </ul>
+        </section>
+
+        <script src="script.js"></script>
+</body>
+</html>

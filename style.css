@@ -1,0 +1,196 @@
+@media (max-width: 600px) {
+  /* Estilos para celulares */
+}
+
+
+:root {
+    --background-primary: #F4F5FB;
+    --background-secondary: #FFFFFF;
+
+    --color-brand: #CA3884;
+    --color-brand-hover: #A52C6B;
+    --color-danger: #C93847;
+
+    --content-primary: #080B12;
+    --content-secondary: #374151;
+    --content-tertiary: #9CA3AF;
+
+    --border-primary: #D1D5DB;
+    --border-hover: #B9C2D0;
+
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: var(--background-primary);
+    color: var(--content-primary);
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+
+.content1, .content2 {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40rem;
+
+ .btn {
+  color: var(--color-brand);  
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit; 
+  font-weight: 600;
+}
+
+
+}
+
+
+.content2 {
+    margin-right: 25rem;
+    margin-top: 1rem;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+
+    input {
+
+    background: #FFFFFF;
+    border: 1px solid var(--border-primary);
+    border-radius: 15px;
+    padding: 15px 290px 15px 20px;
+    font-size: large;
+    cursor: pointer;
+    }
+    
+    button {
+        color: #FFFFFF;
+        background-color: var(--color-brand);
+        border-radius: 15px;
+        border: none;
+        padding:  15px 20px 15px 20px;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit; 
+    }
+}
+
+/*usuário passando o mouse no input*/
+input:hover{
+    border: 1px solid var(--border-hover);
+}
+
+/*usuário clicando no input*/
+input:focus {
+    border: 1px solid var(--color-brand);
+    outline: none;
+}
+
+/*usuário passando o mouse no botão*/
+button:hover {
+    background-color: var(--color-brand-hover);
+}
+
+.list{
+    /*remove as bolinhas da lista*/
+    list-style: none;
+    padding: 1rem 17.5rem 1rem 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+     .itens{
+        width: 43rem;
+        flex-direction: space-between;
+        background-color: var(--background-secondary);
+        padding: 0.1rem 10px 0.1rem 10px;
+        border-radius: 18px;
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        margin: 0.8rem;
+     }
+     .itens >*:last-child{
+      margin-left: auto;
+    }
+    
+    p {
+        font-size: medium;
+        font-weight: 500;
+    }
+     .icon1{
+        width: 1.3rem;
+        height: 1.3rem;
+        cursor: pointer;
+     }
+
+      .icon2{
+        width: 1.3rem;
+        height: 1.3rem;
+        cursor: pointer;
+     }
+
+     .icon1:hover{
+        content: url(./assets/iconCheckBoxHover.svg);
+     }
+
+     .icon1:active {
+        content: url(./assets/iconCheckBoxSelected.svg);
+     }
+
+     /* Classe para manter a imagem selecionada */
+     .icon1.check-active {
+        content: url(./assets/iconCheckBoxSelected.svg);
+     }
+}
+
+
+.removeItem {
+    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
+        
+     ul {
+        padding: 0;
+     }
+
+    .removeAlert{
+        color: #FFFFFF;
+        width: 43rem;
+        flex-direction: space-between;
+        background-color: var(--color-danger);
+        padding: 0.1rem 10px 0.1rem 10px;
+        border-radius: 18px;
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        margin: 0.8rem;
+     }
+     .removeAlert >*:last-child{
+      margin-left: auto;
+    }
+
+    .icon3{
+        cursor: pointer;
+    }
+
+}
