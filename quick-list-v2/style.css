@@ -104,6 +104,10 @@ input:focus {
 button:hover {
     background-color: var(--color-brand-hover);
 }
+/*usuário clicando no botão*/
+button:focus{
+    background-color: var(--color-brand-hover);                 
+}
 
 .list{
     /*remove as bolinhas da lista*/
